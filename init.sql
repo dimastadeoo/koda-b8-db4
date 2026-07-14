@@ -38,6 +38,5 @@ CREATE TABLE "auth_log"(
     "activity" TEXT NOT NULL,
     "ip_address" VARCHAR(80),
     "created_at" TIMESTAMP DEFAULT NOW(),
-    "updated_at" TIMESTAMP DEFAULT NOW()
 );
 
