@@ -34,7 +34,7 @@ CREATE TABLE "sesions"(
 );
 CREATE TABLE "auth_log"(
     "id" BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    "id_user" BIGINT REFERENCES "sesions"("id") NOT NULL, 
+    "id_sesion" BIGINT REFERENCES "sesions"("id") NOT NULL, 
     "activity" TEXT NOT NULL,
     "ip_address" VARCHAR(80),
     "created_at" TIMESTAMP DEFAULT NOW(),
